@@ -16,7 +16,38 @@ class pop{
     public static  void laobiao2(int [] a){
 
     }
-    public static  void laobiao3(int [] a){
+   public static void quickSort(int[] a,int left,int right)
+{
+    if (right<left)
+        return;
+
+    int base=a[left];
+    int i=left;
+    int j=right;
+
+
+    while (i!=j)
+    {
+        while (a[j]>=base&& i<j)
+        {j--;}
+        while (a[i]<= base && i<j)
+        {i++;}
+
+        //i和j停下交换
+        int temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
 
     }
+    //交换基标和检索到最后的数
+    a[left]=a[i];
+    a[i]=base;
+    //递归解决两边数组的排序
+    //左边
+    quickSort(a,left,i-1);
+    //右边
+    quickSort(a,j+1,right);
+}
+
+	
 }
