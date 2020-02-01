@@ -13,4 +13,7 @@ class pop{
             }
         }
     }
+    public static  void laobiao2(int [] a){
+
+    }
 }
