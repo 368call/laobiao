@@ -16,4 +16,7 @@ class pop{
     public static  void laobiao2(int [] a){
 
     }
+    public static  void laobiao3(int [] a){
+
+    }
 }
